@@ -33,7 +33,7 @@ Run the following command to build the project:
 make build
 ```
 
-### See the agent's browser
+### Supervize the agent
 Once the build is complete, go to this URL to supervize the agent:
 http://localhost:6080/
 
