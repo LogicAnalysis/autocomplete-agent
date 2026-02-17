@@ -1,7 +1,11 @@
-data/
+**/data/*
 node_modules/
 .vscode/
 
 .env
 *.log
 *.pid
+
+# Sample file exceptions
+!**/data/example.forms.json
+!example.env
