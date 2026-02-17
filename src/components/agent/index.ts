@@ -2,7 +2,7 @@ import { generateText } from "ai";
 import fs from "fs";
 import path from "path";
 import { Page } from "playwright";
-import { model } from "../../_internal/setup";
+import { model } from "../../_internal/modelSetup";
 import { ToolType } from '../mcp';
 
 const BASE_PROMPT = fs.readFileSync(path.join(__dirname, 'basePrompt.txt'), 'utf-8');
