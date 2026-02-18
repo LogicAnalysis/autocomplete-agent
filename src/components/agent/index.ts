@@ -13,7 +13,6 @@ export async function fillFormWithAgent(page: Page, dataToFill: string, availabl
   // Using ariaSnapshot for clean list of interactions available on the page
   const pageContext = await page.locator("body").ariaSnapshot();
 
-  try {
     const { text, steps } = await generateText({
       model,
       tools: availableTools,
@@ -33,12 +32,5 @@ export async function fillFormWithAgent(page: Page, dataToFill: string, availabl
       finalResponse: text,
       stepsTaken: steps.length
     };
-
-  } catch (error) {
-    return {
-      success: false,
-      error: error
-    };
-  }
 
 }
