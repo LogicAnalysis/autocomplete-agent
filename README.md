@@ -40,8 +40,8 @@ Run the following command to start the container:
 make up
 ```
 
-### Supervize the agent
-Once the build is complete, go to this URL to supervize the agent:
+### Supervise the agent
+Once the build is complete, go to this URL to supervise the agent:
 http://localhost:6080/
 
 ### Run the agent
