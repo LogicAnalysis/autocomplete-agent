@@ -33,6 +33,13 @@ Run the following command to build the project:
 make build
 ```
 
+### Start the container
+Run the following command to start the container:
+
+```bash
+make up
+```
+
 ### Supervize the agent
 Once the build is complete, go to this URL to supervize the agent:
 http://localhost:6080/
