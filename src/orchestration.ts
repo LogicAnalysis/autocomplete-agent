@@ -14,10 +14,14 @@ async function Orchestrator() {
   // Iterate through tasks
   for (const task of tasks) {    
     // Navigate to the URL
+    console.log("🌏 Going to website...")
     await page.goto(task.website);
     
     // Run the agent
     try {
+      console.log("🤖 Starting agent...")
+      console.log(`✍️ Filling out data: ${task.data}`)
+
       const pageTools = getAvailableTools(page);
       await fillFormWithAgent(page, task.data, pageTools);
       
